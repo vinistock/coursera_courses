@@ -25,6 +25,8 @@ section {
     margin: 20px;
     background-color: lightgray;
     border: 1px solid black;
+    height: 225px;
+    overflow: auto;
 }
 
 p {
