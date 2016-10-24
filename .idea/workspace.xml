@@ -2,332 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0beb7631-7c14-44d2-b300-6b469a282e2a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/Course 4/module 5/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/Course 4/module 5/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/Course 4/module 5/css/styles.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/Course 4/module 5/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/Course 4/module 5/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/Course 4/module 5/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/Course 4/module 5/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/Course 4/module 5/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/ajax-loader.gif" afterPath="$PROJECT_DIR$/Course 4/module 5/images/ajax-loader.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/jumbotron_1200.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/jumbotron_1200.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/jumbotron_768.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/jumbotron_768.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/jumbotron_992.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/jumbotron_992.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu-tile.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu-tile.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/A/A.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/A/A.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/A/A1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/A/A1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/A/A10.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/A/A10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/A/A11.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/A/A11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/A/A2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/A/A2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/A/A3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/A/A3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/A/A4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/A/A4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/A/A5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/A/A5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/A/A6.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/A/A6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/A/A7.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/A/A7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/A/A8.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/A/A8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/A/A9.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/A/A9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B10.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B11.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B12.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B13.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B13.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B14.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B14.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B15.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B15.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B16.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B16.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B6.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B7.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B8.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/B/B9.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/B/B9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C10.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C11.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C12.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C13.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C13.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C14.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C14.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C15.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C15.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C16.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C16.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C17.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C17.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C18.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C18.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C19.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C19.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C6.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C7.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C8.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/C/C9.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/C/C9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CM/CM.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CM/CM.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CM/CM1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CM/CM1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CM/CM2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CM/CM2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CM/CM3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CM/CM3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CM/CM4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CM/CM4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CM/CM5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CM/CM5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CSR/CSR.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CSR/CSR.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CSR/CSR1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CSR/CSR1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CSR/CSR2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CSR/CSR2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CSR/CSR3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CSR/CSR3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CSR/CSR4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CSR/CSR4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CU/CU.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CU/CU.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CU/CU21.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CU/CU21.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CU/CU22.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CU/CU22.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/CU/CU23.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/CU/CU23.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D10.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D11.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D12.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D13.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D13.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D14.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D14.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D15.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D15.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D16.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D16.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D17.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D17.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D18.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D18.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D6.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D7.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D8.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/D/D9.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/D/D9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/DK/DK.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/DK/DK.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/DK/DK1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/DK/DK1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/DK/DK2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/DK/DK2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/DK/Dk3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/DK/Dk3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/DS/DS.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/DS/DS.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/DS/DS1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/DS/DS1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/DS/DS2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/DS/DS2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/F/F.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/F/F.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/F/F1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/F/F1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/F/F10.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/F/F10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/F/F11.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/F/F11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/F/F12.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/F/F12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/F/F2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/F/F2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/F/F3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/F/F3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/F/F4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/F/F4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/F/F5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/F/F5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/F/F6.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/F/F6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/F/F7.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/F/F7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/F/F8.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/F/F8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/F/F9.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/F/F9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/FR/FR.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/FR/FR.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/FR/FR1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/FR/FR1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/FR/FR2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/FR/FR2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/FR/FR3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/FR/FR3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/FR/FR4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/FR/FR4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/FR/FR5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/FR/FR5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/FY/FY.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/FY/FY.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/FY/FY1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/FY/FY1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/FY/FY2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/FY/FY2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/FY/FY3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/FY/FY3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/FY/FY4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/FY/FY4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/FY/FY5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/FY/FY5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L10.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L11.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L12.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L13.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L13.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L14.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L14.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L15.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L15.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L16.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L16.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L17.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L17.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L18.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L18.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L19.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L19.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L20.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L20.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L21.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L21.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L22.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L22.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L23.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L23.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L24.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L24.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L26.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L26.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L27.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L27.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L28.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L28.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L6.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L7.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L8.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/L/L9.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/L/L9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/NF/NF.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/NF/NF.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/NF/NF10.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/NF/NF10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/NF/NF11.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/NF/NF11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/NF/NF12.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/NF/NF12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/NF/NF13.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/NF/NF13.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/NL/NL.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/NL/NL.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/NL/NL1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/NL/NL1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/NL/NL2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/NL/NL2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/NL/NL3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/NL/NL3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/NS/NS.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/NS/NS.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/NS/NS1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/NS/NS1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/NS/NS2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/NS/NS2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/NS/NS3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/NS/NS3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/NS/NS4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/NS/NS4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/PF/PF.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/PF/PF.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/PF/PF1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/PF/PF1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/PF/PF2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/PF/PF2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/PF/PF3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/PF/PF3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/PF/PF4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/PF/PF4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/PF/PF5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/PF/PF5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SO/SO.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SO/SO.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SO/SO1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SO/SO1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SO/SO2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SO/SO2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SO/SO3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SO/SO3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SO/SO4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SO/SO4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SO/SO5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SO/SO5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SO/SO6.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SO/SO6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SO/SO7.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SO/SO7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SP/SP.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SP/SP.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SP/SP1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SP/SP1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SP/SP2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SP/SP2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SP/SP3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SP/SP3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SP/SP4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SP/SP4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SP/SP5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SP/SP5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SP/SP6.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SP/SP6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SP/SP7.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SP/SP7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SP/SP8.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SP/SP8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR10.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR11.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR12.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR13.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR13.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR14.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR14.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR15.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR15.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR16.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR16.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR17.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR17.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR18.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR18.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR19.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR19.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR20.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR20.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR21.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR21.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR22.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR22.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR23.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR23.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR24.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR24.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR25.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR25.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR26.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR26.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR27.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR27.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR28.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR28.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR29.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR29.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR30.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR30.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR31.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR31.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR32.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR32.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR33.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR33.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR34.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR34.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR35.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR35.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR36.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR36.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR37.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR37.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR38.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR38.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR39.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR39.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR40.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR40.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR41.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR41.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR42.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR42.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR43.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR43.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR6.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR7.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR8.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SR/SR9.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SR/SR9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS10.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS11.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS12.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS13.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS13.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS14.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS14.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS6.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS7.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS8.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/SS/SS9.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/SS/SS9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/T/T.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/T/T.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/T/T1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/T/T1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/T/T2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/T/T2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/T/T3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/T/T3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/T/T4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/T/T4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/V/V.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/V/V.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/V/V1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/V/V1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/V/V2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/V/V2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/V/V3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/V/V3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/V/V4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/V/V4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/V/V5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/V/V5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/V/V6.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/V/V6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/V/V7.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/V/V7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG1.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG10.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG11.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG12.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG13.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG13.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG14.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG14.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG2.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG3.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG4.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG5.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG6.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG7.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG8.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/menu/VG/VG9.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/menu/VG/VG9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/restaurant-logo.png" afterPath="$PROJECT_DIR$/Course 4/module 5/images/restaurant-logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/restaurant-logo_large.png" afterPath="$PROJECT_DIR$/Course 4/module 5/images/restaurant-logo_large.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/restaurant-logo_medium.png" afterPath="$PROJECT_DIR$/Course 4/module 5/images/restaurant-logo_medium.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/restaurant-logo_small.png" afterPath="$PROJECT_DIR$/Course 4/module 5/images/restaurant-logo_small.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/specials-tile.jpg" afterPath="$PROJECT_DIR$/Course 4/module 5/images/specials-tile.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/star-k-logo.png" afterPath="$PROJECT_DIR$/Course 4/module 5/images/star-k-logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/Course 4/module 5/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/ajax-utils.js" afterPath="$PROJECT_DIR$/Course 4/module 5/js/ajax-utils.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/bootstrap.js" afterPath="$PROJECT_DIR$/Course 4/module 5/js/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/Course 4/module 5/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery-2.1.4.min.js" afterPath="$PROJECT_DIR$/Course 4/module 5/js/jquery-2.1.4.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/npm.js" afterPath="$PROJECT_DIR$/Course 4/module 5/js/npm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/Course 4/module 5/js/script.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 2/css/styles.css" afterPath="$PROJECT_DIR$/Course 4/module 2/css/styles.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 2/index.html" afterPath="$PROJECT_DIR$/Course 4/module 2/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/Course 4/module 3/css/bootstrap-theme.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/Course 4/module 3/css/bootstrap-theme.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/Course 4/module 3/css/bootstrap-theme.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/css/bootstrap-theme.min.css.map" afterPath="$PROJECT_DIR$/Course 4/module 3/css/bootstrap-theme.min.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/css/bootstrap.css" afterPath="$PROJECT_DIR$/Course 4/module 3/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/Course 4/module 3/css/bootstrap.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/Course 4/module 3/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/Course 4/module 3/css/bootstrap.min.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/css/styles.css" afterPath="$PROJECT_DIR$/Course 4/module 3/css/styles.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/Course 4/module 3/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/Course 4/module 3/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/Course 4/module 3/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/Course 4/module 3/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/Course 4/module 3/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/index.html" afterPath="$PROJECT_DIR$/Course 4/module 3/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/js/bootstrap.js" afterPath="$PROJECT_DIR$/Course 4/module 3/js/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/Course 4/module 3/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/js/jquery-1.11.3.min.js" afterPath="$PROJECT_DIR$/Course 4/module 3/js/jquery-1.11.3.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/js/npm.js" afterPath="$PROJECT_DIR$/Course 4/module 3/js/npm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 3/js/script.js" afterPath="$PROJECT_DIR$/Course 4/module 3/js/script.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 4/SpeakGoodBye.js" afterPath="$PROJECT_DIR$/Course 4/module 4/SpeakGoodBye.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 4/SpeakHello.js" afterPath="$PROJECT_DIR$/Course 4/module 4/SpeakHello.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 4/index.html" afterPath="$PROJECT_DIR$/Course 4/module 4/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/module 4/script.js" afterPath="$PROJECT_DIR$/Course 4/module 4/script.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/snippets/categories-title-snippet.html" afterPath="$PROJECT_DIR$/Course 4/module 5/snippets/categories-title-snippet.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/snippets/category-snippet.html" afterPath="$PROJECT_DIR$/Course 4/module 5/snippets/category-snippet.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/snippets/home-snippet.html" afterPath="$PROJECT_DIR$/Course 4/module 5/snippets/home-snippet.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/snippets/menu-item.html" afterPath="$PROJECT_DIR$/Course 4/module 5/snippets/menu-item.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/snippets/menu-items-title.html" afterPath="$PROJECT_DIR$/Course 4/module 5/snippets/menu-items-title.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Course 5/module 1/app.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/Course 5/module 1/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/Course 5/module 1/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/Course 5/module 1/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/Course 5/module 1/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/Course 5/module 1/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/Course 5/module 1/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/styles/bootstrap.min.css" afterPath="$PROJECT_DIR$/Course 5/module 1/styles/bootstrap.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
     </list>
     <ignored path="module 2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -348,24 +32,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+            <state relative-caret-position="664">
+              <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
-              <folding>
-                <marker date="1476636699879" expanded="true" signature="313:440" ph="..." />
-              </folding>
+            <state relative-caret-position="666">
+              <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -388,8 +70,8 @@
         <option value="$PROJECT_DIR$/SpeakHello.js" />
         <option value="$PROJECT_DIR$/SpeakGoodBye.js" />
         <option value="$PROJECT_DIR$/js/script.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -403,7 +85,7 @@
     <option name="x" value="65" />
     <option name="y" value="24" />
     <option name="width" value="1855" />
-    <option name="height" value="1176" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -431,7 +113,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -452,6 +133,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -616,18 +298,20 @@
       <workItem from="1475433104034" duration="797000" />
       <workItem from="1475435195509" duration="1191000" />
       <workItem from="1475528514270" duration="56000" />
-      <workItem from="1476635578704" duration="1261000" />
+      <workItem from="1476635578704" duration="1501000" />
+      <workItem from="1476737790742" duration="23000" />
+      <workItem from="1477266534956" duration="3913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29007000" />
+    <option name="totallyTimeSpent" value="33183000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1176" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20784964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21227197" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -664,6 +348,21 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -678,13 +377,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -803,35 +496,29 @@
     <entry file="file://$PROJECT_DIR$/SpeakGoodBye.js" />
     <entry file="file://$PROJECT_DIR$/SpeakHello.js" />
     <entry file="file://$PROJECT_DIR$/script.js" />
-    <entry file="file://$PROJECT_DIR$/js/script.js">
+    <entry file="file://$PROJECT_DIR$/js/script.js" />
+    <entry file="file://$PROJECT_DIR$/snippets/home-snippet.html" />
+    <entry file="file://$PROJECT_DIR$/Course 5/module 1/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="119" column="80" selection-start-line="119" selection-start-column="80" selection-end-line="119" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/home-snippet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+        <state relative-caret-position="198">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="96" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="56" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
-          <folding>
-            <marker date="1476636699879" expanded="true" signature="313:440" ph="..." />
-          </folding>
+        <state relative-caret-position="666">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+          <folding />
         </state>
       </provider>
     </entry>
