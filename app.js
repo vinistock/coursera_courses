@@ -48,7 +48,11 @@
         $scope.searchIt = function () {
             MenuSearchService.getMatchedMenuItems($scope.query).then(function (response) {
                 controller.found = response;
-                controller.foundSearch = (controller.found.length > 0);
+                if (controller.found.length > 0) {
+                    controller.foundSearch = true;
+                } else {
+                    controller.foundSearch = false;
+                }
             });
         };
 
