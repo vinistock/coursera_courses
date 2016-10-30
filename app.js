@@ -43,12 +43,12 @@
     function controller1 ($scope, MenuSearchService) {
         var controller = this;
         controller.found = [];
-        controller.searched = false;
+        controller.notFound = false;
 
         $scope.searchIt = function () {
             MenuSearchService.getMatchedMenuItems($scope.query).then(function (response) {
+                controller.notFound = (response.length === 0);
                 controller.found = response;
-                controller.searched = true;
             });
         };
 
