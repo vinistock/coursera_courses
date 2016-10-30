@@ -35,6 +35,8 @@
 
                 return foundItems;
             });
+
+            return response;
         }
     }
 
@@ -43,10 +45,8 @@
         $scope.found = [];
 
         $scope.searchIt = function () {
-            MenuSearchService.getMatchedMenuItems($scope.query).then(function (response) {
-                $scope.found = response;
-                console.log($scope.found);
-            });
+            $scope.found = MenuSearchService.getMatchedMenuItems($scope.query);
+            console.log($scope.found);
         };
 
         $scope.removeItem = function (index) {
