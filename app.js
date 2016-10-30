@@ -44,7 +44,7 @@
         $scope.found = [];
 
         $scope.searchIt = function () {
-            $scope.found = MenuSearchService.getMatchedMenuItems($scope.query);
+            $scope.found = MenuSearchService.getMatchedMenuItems($scope.query).$$state.value;
             console.log($scope.found);
         };
 
