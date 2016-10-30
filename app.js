@@ -9,6 +9,7 @@
             templateUrl: 'found_items.html',
             scope: {
                 items: '<',
+                notFound: '<',
                 onRemove: '&'
             },
             controller: controller1,
