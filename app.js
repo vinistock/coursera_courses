@@ -42,14 +42,11 @@
     controller1.$inject = ["$scope", "MenuSearchService"];
     function controller1 ($scope, MenuSearchService) {
         var controller = this;
-        controller.found = [];
-        controller.foundSearch = true;
+        controller.found = [{}];
 
         $scope.searchIt = function () {
             MenuSearchService.getMatchedMenuItems($scope.query).then(function (response) {
                 controller.found = response;
-                controller.foundSearch = !(controller.found.length > 0);
-                console.log(controller.foundSearch);
             });
         };
 
