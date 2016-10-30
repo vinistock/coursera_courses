@@ -34,6 +34,7 @@
                     }
                 }
 
+                console.log(foundItems);
                 return foundItems;
             });
         }
