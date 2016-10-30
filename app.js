@@ -15,7 +15,7 @@
             controllerAs: "items",
             bindToController: true
         };
-        
+
         console.log(ddo);
 
         return ddo;
