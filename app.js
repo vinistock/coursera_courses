@@ -19,8 +19,8 @@
         return ddo;
     }
 
-    MenuSearchService.$inject = ["$http", "controller1"];
-    function MenuSearchService ($http, controller1) {
+    MenuSearchService.$inject = ["$http"];
+    function MenuSearchService ($http) {
         this.getMatchedMenuItems = function (searchTerm) {
             return $http({
                 method: "GET",
@@ -33,8 +33,6 @@
                         foundItems.push(response.data.menu_items[i]);
                     }
                 }
-
-                controller1.setFound(foundItems);
             });
         }
     }
@@ -44,16 +42,14 @@
         $scope.found = [];
 
         $scope.searchIt = function () {
-            $scope.found = MenuSearchService.getMatchedMenuItems($scope.query);
-            console.log($scope.found);
+            MenuSearchService.getMatchedMenuItems($scope.query).then(function (response) {
+                $scope.found = response;
+                console.log($scope.found);
+            });
         };
 
         $scope.removeItem = function (index) {
             $scope.found.splice(1, index);
         };
-
-        $scope.setFound = function (found) {
-            $scope.found = found;
-        }
     }
 })();
