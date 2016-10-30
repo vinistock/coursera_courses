@@ -51,6 +51,7 @@
         };
 
         controller.removeItem = function (index) {
+            console.log(index);
             controller.found.splice(1, index);
         };
     }
