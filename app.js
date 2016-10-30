@@ -34,7 +34,6 @@
                     }
                 }
 
-                console.log(foundItems);
                 return foundItems;
             });
         }
@@ -47,7 +46,6 @@
         $scope.searchIt = function () {
             MenuSearchService.getMatchedMenuItems($scope.query).then(function (response) {
                 $scope.found = response;
-                console.log($scope.found);
             });
         };
 
