@@ -33,6 +33,8 @@
                         foundItems.push(response.data.menu_items[i]);
                     }
                 }
+
+                return foundItems;
             });
         }
     }
