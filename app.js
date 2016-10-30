@@ -20,7 +20,7 @@
     }
 
     MenuSearchService.$inject = ["$http", "controller1"];
-    function MenuSearchService ($http) {
+    function MenuSearchService ($http, controller1) {
         this.getMatchedMenuItems = function (searchTerm) {
             return $http({
                 method: "GET",
