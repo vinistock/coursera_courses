@@ -44,6 +44,7 @@
 
         $scope.searchIt = function () {
             $scope.found = MenuSearchService.getMatchedMenuItems($scope.query);
+            console.log($scope.found);
         };
 
         $scope.removeItem = function (index) {
