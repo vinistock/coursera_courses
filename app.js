@@ -9,7 +9,7 @@
             templateUrl: "found_items.html",
             scope: {
                 foundItems: "<",
-                removeItem: "="
+                removeItem: "&"
             },
             controller: controller1,
             controllerAs: "items",
