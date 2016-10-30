@@ -19,12 +19,22 @@
         return ddo;
     }
 
-    MenuSearchService.$inject = ["$http"];
+    MenuSearchService.$inject = ["$http", "controller1"];
     function MenuSearchService ($http) {
         this.getMatchedMenuItems = function (searchTerm) {
             return $http({
                 method: "GET",
                 url: "https://davids-restaurant.herokuapp.com/menu_items.json"
+            }).then(function (response) {
+                var foundItems = [];
+
+                for (var i = 0; i < response.data.menu_items.length; i++) {
+                    if (response.data.menu_items[i].description.includes(searchTerm)) {
+                        foundItems.push(response.data.menu_items[i]);
+                    }
+                }
+
+                controller1.setFound(foundItems);
             });
         }
     }
@@ -34,21 +44,16 @@
         $scope.found = [];
 
         $scope.searchIt = function () {
-            $scope.found = MenuSearchService.getMatchedMenuItems($scope.query).then(function (response) {
-                var foundItems = [];
-
-                for (var i = 0; i < response.data.menu_items.length; i++) {
-                    if (response.data.menu_items[i].description.includes(searchTerm)) {
-                        foundItems.push(response.data.menu_items[i]);
-                    }
-                }
-
-                $scope.found = foundItems;
-            });
+            $scope.found = MenuSearchService.getMatchedMenuItems($scope.query);
+            console.log($scope.found);
         };
 
         $scope.removeItem = function (index) {
             $scope.found.splice(1, index);
         };
+
+        $scope.setFound = function (found) {
+            $scope.found = found;
+        }
     }
 })();
