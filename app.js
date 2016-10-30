@@ -6,17 +6,15 @@
 
     function foundItems () {
         var ddo = {
-            templateUrl: "found_items.html",
+            templateUrl: 'found_items.html',
             scope: {
-                foundItems: "<",
-                onRemove: "&"
+                items: '<',
+                onRemove: '&'
             },
             controller: controller1,
-            controllerAs: "items",
+            controllerAs: 'list',
             bindToController: true
         };
-
-        console.log(ddo);
 
         return ddo;
     }
