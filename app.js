@@ -41,16 +41,17 @@
 
     controller1.$inject = ["$scope", "MenuSearchService"];
     function controller1 ($scope, MenuSearchService) {
-        $scope.found = [];
+        var controller = this;
+        controller.found = [];
 
         $scope.searchIt = function () {
             MenuSearchService.getMatchedMenuItems($scope.query).then(function (response) {
-                $scope.found = response;
+                controller.found = response;
             });
         };
 
-        $scope.removeItem = function (index) {
-            $scope.found.splice(1, index);
+        controller.removeItem = function (index) {
+            controller.found.splice(1, index);
         };
     }
 })();
