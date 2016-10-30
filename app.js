@@ -1,46 +1,53 @@
-(function () {
-    angular.module("ShoppingListCheckOff", [])
+(function (){
+    angular.module("NarrowItDownApp", [])
         .controller("controller1", controller1)
-        .controller("controller2", controller2)
-        .service("ShoppingListCheckOffService", ShoppingListCheckOffService);
+        .service("MenuSearchService", MenuSearchService)
+        .directive("foundItems", foundItems);
 
-    controller1.$inject = ["ShoppingListCheckOffService"];
-    controller2.$inject = ["ShoppingListCheckOffService"];
-
-    function ShoppingListCheckOffService () {
-        var bought = [];
-        var toBuy = [
-            { name: "cookies", quantity: 10 },
-            { name: "chips", quantity: 2 },
-            { name: "soda bottles", quantity: 5 },
-            { name: "nacho bags", quantity: 3 },
-            { name: "juice bottles", quantity: 2 }
-        ];
-
-        this.getBought = function () {
-            return bought;
+    function foundItems () {
+        var ddo = {
+            templateUrl: "found_items.html",
+            scope: {
+                foundItems: "<",
+                removeItem: "="
+            },
+            controller: controller1,
+            controllerAs: "items",
+            bindToController: true
         };
 
-        this.getToBuy = function () {
-            return toBuy;
-        };
-
-        this.addBought = function (index) {
-            var item = toBuy[index];
-            bought.push(item);
-            toBuy.splice(index, 1);
-        };
+        return ddo;
     }
 
-    function controller1 (ShoppingListCheckOffService) {
-        this.toBuy = ShoppingListCheckOffService.getToBuy();
+    MenuSearchService.$inject = ["$http"];
+    function MenuSearchService ($http) {
+        this.getMatchedMenuItems = function (searchTerm) {
+            var foundItems = [];
+            var response = $http({
+                method: "GET",
+                url: "https://davids-restaurant.herokuapp.com/menu_items.json"
+            }).then(function (response) {
+                for (var i = 0; i < response.data.menu_items.length; i++) {
+                    if (response.data.menu_items[i].description.includes(searchTerm)) {
+                        foundItems.push(response.data.menu_items[i]);
+                    }
+                }
 
-        this.addBought = function (index) {
-            ShoppingListCheckOffService.addBought(index);
+                return foundItems;
+            });
         }
     }
 
-    function controller2 (ShoppingListCheckOffService) {
-        this.bought = ShoppingListCheckOffService.getBought();
+    controller1.$inject = ["$scope", "MenuSearchService"];
+    function controller1 ($scope, MenuSearchService) {
+        $scope.found = [];
+
+        $scope.searchIt = function () {
+            $scope.found = MenuSearchService.getMatchedMenuItems($scope.query);
+        };
+
+        $scope.removeItem = function (index) {
+            $scope.found.splice(1, index);
+        };
     }
 })();
