@@ -19,6 +19,8 @@
             return $http({
                 method: "GET",
                 url: "https://davids-restaurant.herokuapp.com/menu_items.json?category=" + categoryShortName
+            }).then(function (response) {
+                return(response.data);
             });
         };
     }

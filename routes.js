@@ -27,7 +27,7 @@
                 resolve: {
                     item: ["$stateParams", "MenuDataService", function ($stateParams, MenuDataService) {
                         return MenuDataService.getAllCategories().then(function (response) {
-                            return response[$stateParams.id];
+                            return MenuDataService.getItemsForCategory(response[$stateParams.id].short_name);
                         });
                     }]
                 }

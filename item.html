@@ -1,5 +1,5 @@
-<h3>{{ itemController.item.name }}</h3>
-
-<label>{{ itemController.item.short_name }}</label>
-
-<p>{{ itemController.item.special_instructions }}</p>
+<ul>
+    <li ng-repeat="sub_item in itemController.item">
+        <label>{{ sub_item.name }}</label>: <p>{{ sub_item.description }}</p>
+    </li>
+</ul>

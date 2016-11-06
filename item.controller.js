@@ -5,6 +5,6 @@
     function ItemController (item) {
         var itemController = this;
 
-        itemController.item = item;
+        itemController.item = item.menu_items;
     }
 })();
