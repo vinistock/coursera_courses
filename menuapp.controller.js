@@ -6,6 +6,5 @@
         var menuController = this;
 
         menuController.categories = categories;
-        console.log(menuController.categories);
     }
 })();

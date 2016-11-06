@@ -19,6 +19,18 @@
                         return MenuDataService.getAllCategories();
                     }]
                 }
+            })
+            .state("items", {
+                url: "/items/{id}",
+                templateUrl: "item.html",
+                controller: "MenuAppController as menuController",
+                resolve: {
+                    item: ["$stateParams", "MenuDataService", function ($stateParams, MenuDataService) {
+                        return MenuDataService.getAllCategories().then(function (response) {
+                            return response[$stateParams.id];
+                        });
+                    }]
+                }
             });
     }
 })();
