@@ -23,7 +23,7 @@
             .state("items", {
                 url: "/items/{id}",
                 templateUrl: "item.html",
-                controller: "MenuAppController as menuController",
+                controller: "ItemController as itemController",
                 resolve: {
                     item: ["$stateParams", "MenuDataService", function ($stateParams, MenuDataService) {
                         return MenuDataService.getAllCategories().then(function (response) {

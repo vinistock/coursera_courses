@@ -1,12 +1,11 @@
 (function () {
     angular.module("MenuApp").controller("MenuAppController", MenuAppController);
 
-    MenuAppController.$inject = ["categories", "item"];
-    function MenuAppController (categories, item) {
+    MenuAppController.$inject = ["categories"];
+    function MenuAppController (categories) {
         var menuController = this;
 
         menuController.categories = categories;
         menuController.item = item;
-        console.log(menuController.item);
     }
 })();
