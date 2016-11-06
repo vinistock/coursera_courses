@@ -1,28 +1,26 @@
-<!doctype html>
-<html lang="en" ng-app="NarrowItDownApp">
+<!DOCTYPE html>
+<html ng-app="MenuApp">
 <head>
-    <title>Narrow Down Your Menu Choice</title>
+    <title>Assignment 4</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="menuapp.module.js"></script>
+    <script type="text/javascript" src="data.module.js"></script>
+    <script type="text/javascript" src="menudata.service.js"></script>
+    <script type="text/javascript" src="categories.component.js"></script>
+    <script type="text/javascript" src="items.component.js"></script>
+    <script type="text/javascript" src="routes.js"></script>
+    <script type="text/javascript" src="menuapp.controller.js"></script>
 </head>
 <body>
-<div class="container" ng-controller="controller1 as NarrowItDownController">
-    <h1>Narrow Down Your Chinese Menu Choice</h1>
+    <h1>Welcome to our Restaurant!</h1>
 
-    <div class="form-group">
-        <input type="text" placeholder="search term" class="form-control" ng-model="query">
-    </div>
-    <div class="form-group narrow-button">
-        <button class="btn btn-primary" ng-click="searchIt()">Narrow It Down For Me!</button>
+    <div>
+        <a ui-sref="home">Home</a>
+        <a ui-sref="categories">Categories</a>
     </div>
 
-    <div class="clearfix"></div>
-    <!-- found-items should be implemented as a component -->
-    <found-items items="NarrowItDownController.found" on-remove="NarrowItDownController.removeItem(index)" not-found="NarrowItDownController.notFound"></found-items>
-</div>
-
+    <ui-view></ui-view>
 </body>
 </html>
