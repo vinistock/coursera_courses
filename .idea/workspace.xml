@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0beb7631-7c14-44d2-b300-6b469a282e2a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/categories.html" afterPath="$PROJECT_DIR$/categories.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/menuapp.controller.js" afterPath="$PROJECT_DIR$/menuapp.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes.js" afterPath="$PROJECT_DIR$/routes.js" />
     </list>
     <ignored path="module 2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +38,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
               <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-              <folding />
+              <folding>
+                <marker date="1478452308612" expanded="true" signature="78:203" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menuapp.controller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="menuapp.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/menuapp.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -70,17 +70,22 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
               <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-              <folding />
+              <folding>
+                <marker date="1478449309860" expanded="true" signature="73:188" ph="{...}" />
+                <marker date="1478449309860" expanded="true" signature="136:178" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
               <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-              <folding />
+              <folding>
+                <marker date="1478453075915" expanded="true" signature="396:785" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,7 +95,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
               <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1478452778712" expanded="true" signature="184:778" ph="{...}" />
+                <marker date="1478452778712" expanded="true" signature="262:507" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,8 +131,8 @@
         <option value="$PROJECT_DIR$/categories.component.js" />
         <option value="$PROJECT_DIR$/menudata.service.js" />
         <option value="$PROJECT_DIR$/categories.html" />
-        <option value="$PROJECT_DIR$/menuapp.controller.js" />
         <option value="$PROJECT_DIR$/routes.js" />
+        <option value="$PROJECT_DIR$/menuapp.controller.js" />
       </list>
     </option>
   </component>
@@ -357,12 +365,12 @@
       <workItem from="1477513443506" duration="14000" />
       <workItem from="1477852319449" duration="9377000" />
       <workItem from="1477950827204" duration="37000" />
-      <workItem from="1478447021230" duration="5917000" />
+      <workItem from="1478447021230" duration="6023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48981000" />
+    <option name="totallyTimeSpent" value="49087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -571,7 +579,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding />
+          <folding>
+            <marker date="1478449309860" expanded="true" signature="73:188" ph="{...}" />
+            <marker date="1478449309860" expanded="true" signature="136:178" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -587,15 +598,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menuapp.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
+          <folding>
+            <marker date="1478452308612" expanded="true" signature="78:203" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -603,7 +608,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1478452778712" expanded="true" signature="184:778" ph="{...}" />
+            <marker date="1478452778712" expanded="true" signature="262:507" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -611,6 +619,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <marker date="1478453075915" expanded="true" signature="396:785" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menuapp.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
           <folding />
         </state>
       </provider>
