@@ -3,8 +3,8 @@
 
     MenuAppController.$inject = ["categories"];
     function MenuAppController (categories) {
-        var controller = this;
+        var menuController = this;
 
-        controller.categories = categories;
+        menuController.categories = categories;
     }
 })();
