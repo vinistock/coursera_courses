@@ -6,6 +6,5 @@
         var itemController = this;
 
         itemController.item = item;
-        console.log(itemController.item);
     }
 })();

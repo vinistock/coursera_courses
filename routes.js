@@ -8,7 +8,7 @@
         $stateProvider
             .state("home", {
                 url: "/",
-                template: "<h3>Home</h3>"
+                template: "<h3>Welcome to our Restaurant!</h3>"
             })
             .state("categories", {
                 url: "/categories",
