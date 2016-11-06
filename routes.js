@@ -12,7 +12,7 @@
             })
             .state("categories", {
                 url: "/categories",
-                template: "<categories></categories>",
+                templateUrl: "categories.html",
                 controller: "MenuAppController as menuController",
                 resolve: {
                     categories: ["MenuDataService", function (MenuDataService) {
