@@ -1,0 +1,41 @@
+<div class="container">
+    <form id="signUpForm" name="signUpForm" novalidate>
+        <div class="col-sm-6">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" ng-model="RegCtrl.first_name" minlength="4" required>
+            <span ng-if="(signUpForm.first_name.$error.minlength || signUpForm.first_name.$error.required) && signUpForm.first_name.$touched">First name must be at least 4 characters long</span>
+        </div>
+
+        <div class="col-sm-6">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name"  ng-model="RegCtrl.last_name" minlength="4" required>
+            <span ng-if="(signUpForm.last_name.$error.minlength || signUpForm.last_name.$error.required) && signUpForm.last_name.$touched">Last name must be at least 4 characters long</span>
+        </div>
+
+        <div class="col-sm-6">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email"  ng-model="RegCtrl.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <span ng-if="signUpForm.email.$invalid && signUpForm.email.$touched">Email format is invalid</span>
+        </div>
+
+        <div class="col-sm-6">
+            <label for="phone_number">Phone Number</label>
+            <input type="text" id="phone_number" name="phone_number" ng-model="RegCtrl.phone_number" pattern="(\d{3})-(\d{3})-(\d{4})" required>
+            <span ng-if="signUpForm.phone_number.$invalid && signUpForm.phone_number.$touched">Phone must be in the format ###-###-####.</span>
+        </div>
+
+        <div class="col-sm-6">
+            <label for="short-name">Favorite dish</label>
+            <input type="text" id="short-name" name="short-name" ng-model="RegCtrl.short_name" required>
+            <span ng-if="RegCtrl.invalid" class="pull-right">No such menu number exists.</span>
+        </div>
+
+        <div>
+            <h4 ng-if="RegCtrl.completed" class="pull-right">Your information has been saved.</h4>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <button type="submit" class="btn btn-default" ng-disabled="signUpForm.$invalid" ng-click="RegCtrl.submit()">Sign up</button>
+    </form>
+</div>

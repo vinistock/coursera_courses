@@ -1,0 +1,26 @@
+<div ng-if="RegCtrl.registration === undefined">
+    <p>Not Signed Up Yet!</p>
+    <a ui-sref="public.info">Sign Up</a>
+</div>
+
+<div id="my-info" ng-if="RegCtrl.registration">
+    <h2>{{ RegCtrl.registration.first_name }} {{ RegCtrl.registration.last_name }}</h2>
+
+    <div>
+        <label>Email: {{ RegCtrl.registration.email }}</label>
+    </div>
+
+    <div>
+        <label>Phone Number: {{ RegCtrl.registration.phone_number }}</label>
+    </div>
+
+    <div>
+        <h3>{{ RegCtrl.menu_item.title }}</h3>
+
+        <img class="pull-left" width="200" height="200" ng-src="images/menu/{{RegCtrl.menu_item.category_short_name}}/{{RegCtrl.menu_item.category_short_name}}.jpg">
+
+        <p class="pull-left">{{ RegCtrl.menu_item.description }}</p>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
