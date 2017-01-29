@@ -3,11 +3,9 @@ class BarsController < ApplicationController
 
   def index
     @bars = Bar.all
-    # render json: @bars
   end
 
   def show
-    # render json: @bar
   end
 
   def create
@@ -32,7 +30,6 @@ class BarsController < ApplicationController
 
   def destroy
     @bar.destroy
-
     head :no_content
   end
 

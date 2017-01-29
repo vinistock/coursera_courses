@@ -3,11 +3,9 @@ class FoosController < ApplicationController
 
   def index
     @foos = Foo.all
-    # render json: @foos
   end
 
   def show
-    # render json: @foo
   end
 
   def create
@@ -32,7 +30,6 @@ class FoosController < ApplicationController
 
   def destroy
     @foo.destroy
-
     head :no_content
   end
 
