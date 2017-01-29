@@ -16,6 +16,7 @@ test:
         read:
           mode: :primary
         max_pool_size: 1
+<% if ENV['MLAB_DATABASE'] %>
 production:
   clients:
     default:
@@ -26,3 +27,4 @@ production:
         - <%= ENV['MLAB_HOST'] %>:<%= ENV['MLAB_PORT'] %>
       options:
         connection_timeout: 15
+<% end %>
