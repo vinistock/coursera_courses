@@ -20,11 +20,12 @@ test:
 production:
   clients:
     default:
-      database: <%= ENV['MLAB_DATABASE'] %>
-      username: <%= ENV['MLAB_USER'] %>
-      password: <%= ENV['MLAB_PASSWORD'] %>
-      hosts:
-        - <%= ENV['MLAB_HOST'] %>:<%= ENV['MLAB_PORT'] %>
+      uri: <%= ENV['MLAB_URI'] %>
+#      database: <%= ENV['MLAB_DATABASE'] %>
+#      username: <%= ENV['MLAB_USER'] %>
+#      password: <%= ENV['MLAB_PASSWORD'] %>
+#      hosts:
+#        - <%= ENV['MLAB_HOST'] %>:<%= ENV['MLAB_PORT'] %>
       options:
         connection_timeout: 15
 <% end %>
