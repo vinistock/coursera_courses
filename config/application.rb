@@ -19,7 +19,7 @@ module Api
 
     config.middleware.insert_before 0, 'Rack::Cors' do
       allow do
-        origins '*'
+        origins /https:\/\/stock-\w+\.herokuapp\.com/
 
         resource '/api/*',
             headers: :any,
