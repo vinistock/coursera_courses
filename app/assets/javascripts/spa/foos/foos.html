@@ -1,0 +1,23 @@
+<div>
+    <h2>Hello</h2>
+    <span>(from foos.html)</span>
+
+    <form>
+        <div>
+            <label>Name:</label>
+            <input name="name" ng-model="foosCtrl.foo.name" required="required">
+            <button ng-if="!foosCtrl.foo.id" type="submit" ng-click="foosCtrl.create()">Create Foo</button>
+
+            <div ng-if="foosCtrl.foo.id">
+                <button type="submit" ng-click="foosCtrl.update()">Update Foo</button>
+                <button type="submit" ng-click="foosCtrl.remove()">Delete Foo</button>
+            </div>
+        </div>
+    </form>
+
+    <ul>
+        <li ng-repeat="foo in foosCtrl.foos | orderBy: 'name'">
+            <a ng-click="foosCtrl.edit(foo)">{{ foo.name }}</a>
+        </li>
+    </ul>
+</div>
