@@ -1,0 +1,22 @@
+<div>
+    <h2>City List</h2>
+
+    <form>
+        <div>
+            <label>Name:</label>
+            <input name="name" ng-model="citiesCtrl.city.name" required="required">
+            <button ng-if="!citiesCtrl.city.id" type="submit" ng-click="citiesCtrl.create()">Create City</button>
+
+            <div ng-if="citiesCtrl.city.id">
+                <button type="submit" ng-click="citiesCtrl.update()">Update City</button>
+                <button type="submit" ng-click="citiesCtrl.remove()">Delete City</button>
+            </div>
+        </div>
+    </form>
+
+    <ul>
+        <li ng-repeat="city in citiesCtrl.cities | orderBy: 'name'">
+            <a ng-click="citiesCtrl.edit(city)">{{ city.name }}</a>
+        </li>
+    </ul>
+</div>

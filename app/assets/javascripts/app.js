@@ -14,3 +14,8 @@
 //= require spa/foos/foos.service
 //= require spa/foos/foos.controller
 //= require spa/foos/foos.directive
+
+//= require spa/cities/cities.module
+//= require spa/cities/cities.service
+//= require spa/cities/cities.controller
+//= require spa/cities/cities.directive
