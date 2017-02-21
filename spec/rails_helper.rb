@@ -12,3 +12,16 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
 end
+
+# Put this or angular can't access database!
+# Rails running on one thread, Angular in another!
+class ActiveRecord::Base
+  mattr_accessor :shared_connection
+  @@shared_connection = nil
+
+  def self.connection
+    @@shared_connection || retrieve_connection
+  end
+end
+
+ActiveRecord::Base.shared_connection = ActiveRecord::Base.connection

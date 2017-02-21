@@ -27,6 +27,12 @@ group :development, :test do
   gem 'byebug'
   gem 'pry-byebug'
   gem 'mongoid-rspec'
+  gem 'capybara', '~> 2.10', '>= 2.10.1'
+  gem 'poltergeist', '~> 1.11', '>= 1.11.0'
+  gem 'selenium-webdriver', '~> 2.53', '>= 2.53.4'
+  gem 'chromedriver-helper', '~> 1.0', '>= 1.0.0'
+  gem 'launchy', '~> 2.4', '>= 2.4.3'
+  gem 'simplecov', '~> 0', '>= 0.12', require: false
 end
 
 group :production do
