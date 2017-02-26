@@ -21,9 +21,10 @@ module Api
       allow do
         origins /https:\/\/stock-\w+\.herokuapp\.com/
 
-        resource '/api/*',
-            headers: :any,
-            methods: [:get, :post, :put, :delete, :options]
+        resource '*',
+                 headers: :any,
+                 expose: %w(access-token expiry token-type uid client),
+                 methods: [:get, :post, :put, :delete, :options]
       end
     end
   end
