@@ -3,11 +3,49 @@ module ApiHelper
     JSON.parse(response.body)
   end
 
-  %w(post put).each do |method_name|
+  %w(post put get patch head delete).each do |method_name|
     define_method("j#{method_name}") do |path, params={}, headers={}|
-      headers = headers.merge('Content-Type' => 'application/json') unless params.empty?
-      self.send(method_name, path, params.to_json, headers)
+
+      if %w(post put patch).include?(method_name)
+        headers = headers.merge('Content-Type' => 'application/json') unless params.empty?
+        params = params.to_json
+      end
+
+      self.send(method_name, path, params, headers.merge(access_tokens))
     end
+  end
+
+  def signup(registration, status=:ok)
+    jpost user_registration_path, registration
+    expect(response).to have_http_status(status)
+    payload = parsed_body
+
+    if response.ok?
+      registration.merge(id: payload['data']['id'], uid: payload['data']['uid'])
+    end
+  end
+
+  def login(credentials, status=:ok)
+    jpost user_session_path, credentials.slice(:email, :password)
+    expect(response).to have_http_status(status)
+    response.ok? ? parsed_body['data'] : parsed_body
+  end
+
+  def logout(credentials, status=:ok)
+    jdelete destroy_user_session_path, credentials.slice(:email, :password)
+    expect(response).to have_http_status(status)
+  end
+
+  def access_tokens?
+    !response.headers['access-token'].nil? if response
+  end
+
+  def access_tokens
+    if access_tokens?
+      @last_tokens = %w(access-token uid client access-token).inject({}) { |h, k| h[k] = response.headers[k]; h }
+    end
+
+    @last_tokens || {}
   end
 end
 
