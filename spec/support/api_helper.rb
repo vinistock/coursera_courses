@@ -33,7 +33,8 @@ module ApiHelper
 
   def logout(credentials, status=:ok)
     jdelete destroy_user_session_path, credentials.slice(:email, :password)
-    expect(response).to have_http_status(status)
+    @last_tokens = {}
+    expect(response).to have_http_status(status) if status
   end
 
   def access_tokens?
@@ -55,7 +56,7 @@ RSpec.shared_examples 'resource index' do |model|
     let(:payload) { parsed_body }
 
     it 'returns all instances' do
-      get send("#{model}s_path", { param1: 'whatever', 'Accept' => 'application/json' })
+      jget send("#{model}s_path", { param1: 'whatever', 'Accept' => 'application/json' })
 
       expect(request.method).to eq('GET')
       expect(response).to have_http_status(:ok)
@@ -72,14 +73,14 @@ RSpec.shared_examples 'resource show' do |model|
   let(:payload) { parsed_body }
 
   it "returns #{model} when using correct ID" do
-    get send("#{model}_path", resource.id)
+    jget send("#{model}_path", resource.id)
     expect(response).to have_http_status(:ok)
 
     response_check if respond_to?(:response_check)
   end
 
   it 'returns not found when using incorrect ID' do
-    get send("#{model}_path", bad_id)
+    jget send("#{model}_path", bad_id)
     expect(response).to have_http_status(:not_found)
     expect(response.content_type).to eq('application/json')
 
@@ -105,22 +106,20 @@ RSpec.shared_examples 'resource update and delete' do |model|
   let(:new_name) { 'testing' }
 
   it 'can update name' do
-    expect(resource.name).to_not eq(new_name)
-
-    jput(send("#{model}_path", resource.id), { name: new_name })
-
+    jput(send("#{model}_path", resource.id), new_state)
     expect(response).to have_http_status(:no_content)
-    expect(resource.reload.name).to eq(new_name)
+
+    udpate_check if respond_to?(:update_check)
   end
 
   it 'can be deleted' do
-    head send("#{model}_path", resource.id)
+    jhead send("#{model}_path", resource.id)
     expect(response).to have_http_status(:ok)
 
-    delete send("#{model}_path", resource.id)
+    jdelete send("#{model}_path", resource.id)
     expect(response).to have_http_status(:no_content)
 
-    head send("#{model}_path", resource.id)
+    jhead send("#{model}_path", resource.id)
     expect(response).to have_http_status(:not_found)
   end
 end

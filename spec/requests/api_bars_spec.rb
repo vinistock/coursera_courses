@@ -24,6 +24,8 @@ describe 'Bars API', type: :request do
   end
 
   context 'existing Bar' do
-    it_behaves_like 'resource update and delete', :bar
+    it_behaves_like 'resource update and delete', :bar do
+      let(:new_state) { { name: new_name } }
+    end
   end
 end
