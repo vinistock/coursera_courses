@@ -1,5 +1,5 @@
 (function () {
     "use strict";
 
-    angular.module("spa", ["ui.router", "spa.foos", "spa.cities"]);
+    angular.module("spa", ["ui.router", "spa.config", "spa.foos", "spa.cities", "spa.authn"]);
 })();

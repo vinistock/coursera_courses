@@ -4,6 +4,7 @@ require 'capybara'
 require 'capybara/poltergeist'
 
 require_relative 'support/api_helper'
+require_relative 'support/ui_helper'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
@@ -19,6 +20,7 @@ RSpec.configure do |config|
   config.include Mongoid::Matchers, orm: :mongoid
   config.include FactoryGirl::Syntax::Methods
   config.include ApiHelper, type: :request
+  config.include UiHelper, type: :feature
 
   Capybara.register_driver :selenium do |app|
     Capybara::Selenium::Driver.new(app, browser: :chrome)

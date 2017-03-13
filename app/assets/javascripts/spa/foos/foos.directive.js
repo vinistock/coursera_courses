@@ -3,7 +3,7 @@
 
     angular.module("spa.foos").directive("sdFoos", FoosDirective);
 
-    FoosDirective.$inject = ["spa.APP_CONFIG"];
+    FoosDirective.$inject = ["spa.config.APP_CONFIG"];
     function FoosDirective (APP_CONFIG) {
         return {
             templateUrl: APP_CONFIG.foos_html,

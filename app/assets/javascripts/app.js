@@ -5,11 +5,19 @@
 //= require angular
 //= require angular-ui-router
 //= require angular-resource
+//= require angular-cookie
+//= require ng-token-auth
 
 // Angular requires
 //= require spa/spa.module
 //= require spa/app.router
-//= require spa/spa.constant
+//= require spa/config/config.module
+
+//= require spa/authn/authn.module
+//= require spa/authn/authn.config
+//= require spa/authn/authn.service
+//= require spa/authn/signup/signup.component
+
 //= require spa/foos/foos.module
 //= require spa/foos/foos.service
 //= require spa/foos/foos.controller

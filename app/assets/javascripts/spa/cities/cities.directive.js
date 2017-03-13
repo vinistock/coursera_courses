@@ -3,7 +3,7 @@
 
     angular.module("spa.cities").directive("sdCities", CitiesDirective);
 
-    CitiesDirective.$inject = ["spa.APP_CONFIG"];
+    CitiesDirective.$inject = ["spa.config.APP_CONFIG"];
     function CitiesDirective (APP_CONFIG) {
         return {
             templateUrl: APP_CONFIG.cities_html,
