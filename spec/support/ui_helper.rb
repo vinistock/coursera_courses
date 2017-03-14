@@ -20,4 +20,14 @@ module UiHelper
       expect(page).to have_button('Sign Up')
     end
   end
+
+  def login(registration)
+    find('#navbar-loginlabel', text: 'Login').click
+
+    within '#login-form' do
+      fill_in('login_email', with: registration[:email])
+      fill_in('login_password', with: registration[:password])
+      click_button('Login')
+    end
+  end
 end

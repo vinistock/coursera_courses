@@ -11,6 +11,7 @@
         service.isAuthenticated = isAuthenticated;
         service.getCurrentUser = getCurrentUser;
         service.getCurrentUserName = getCurrentUserName;
+        service.login = login;
 
         function signup (registration) {
             return $auth.submitRegistration(registration);
@@ -26,6 +27,19 @@
 
         function getCurrentUser () {
             return service.user;
+        }
+
+        function login (credentials) {
+            var result = $auth.submitLogin({
+                email: credentials["email"],
+                password: credentials["password"]
+            });
+
+            result.then(function (response) {
+                service.user = response;
+            });
+
+            return result;
         }
     }
 })();

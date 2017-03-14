@@ -62,9 +62,33 @@ feature 'Authns', type: :feature, js: true do
   end
 
   feature 'login' do
+    before do
+      signup(registration)
+      login(registration)
+    end
+
     context 'valid user login' do
-      scenario 'closes form and displays current user name'
-      scenario 'menu shows logout option'
+      scenario 'closes form and displays current user name' do
+        using_wait_time 5 do
+          expect(page).to have_css('#navbar-loginlabel', text: /#{registration[:name]}/)
+          expect(page).to have_no_css('#login-form')
+          expect(page).to have_no_css('#logout-form')
+        end
+      end
+
+      scenario 'menu shows logout option with identity' do
+        click_link(registration[:name])
+
+        using_wait_time 5 do
+          expect(page).to have_css('#user_id', text: /.+/, visible: false)
+          expect(page).to have_css('#logout-identity label', text: registration[:name])
+
+          within '#logout-form' do
+            expect(page).to have_button('Logout')
+          end
+        end
+      end
+
       scenario 'can access authenticated resources'
     end
 
