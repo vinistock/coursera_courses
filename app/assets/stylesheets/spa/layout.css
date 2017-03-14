@@ -10,3 +10,8 @@ form .invalid {
     padding-right: 0;
     padding-left: 0;
 }
+
+.nav li form {
+    padding-left: 10px;
+    padding-right: 10px;
+}

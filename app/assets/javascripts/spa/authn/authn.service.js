@@ -3,8 +3,8 @@
 
     angular.module("spa.authn").service("spa.authn.Authn", Authn);
 
-    Authn.$inject = ["$auth"];
-    function Authn ($auth) {
+    Authn.$inject = ["$auth", "$q"];
+    function Authn ($auth, $q) {
         var service = this;
         service.signup = signup;
         service.user = null;
@@ -44,11 +44,17 @@
                 password: credentials["password"]
             });
 
+            var deferred = $q.defer();
+
             result.then(function (response) {
                 service.user = response;
+                deferred.resolve(response);
+            }, function (response) {
+                var formatted_errors = { errors: { full_messages: response.errors } };
+                deferred.reject(formatted_errors);
             });
 
-            return result;
+            return deferred.promise;
         }
 
         function logout () {

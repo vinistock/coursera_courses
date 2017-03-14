@@ -93,7 +93,23 @@ feature 'Authns', type: :feature, js: true do
     end
 
     context 'invalid login' do
-      scenario 'error message displayed and leaves user unauthenticated'
+      before do
+        logout
+      end
+
+      scenario "error message displayed and leaves user unauthenticated" do
+        fillin_login registration.merge(:password=>"badpassword")
+        within("#login-form") do
+          click_button("Login")
+        end
+
+        expect(logged_in?(registration)).to be false
+        expect(page).to have_css("#login-form") #form still displayed
+        within("div#login-submit") do           #error message in form
+          expect(page).to have_css("span.invalid",:text=>/Invalid credentials/)
+        end
+        expect(page).to have_css("#navbar-loginlabel",:text=>"Login")
+      end
     end
   end
 
