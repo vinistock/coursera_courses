@@ -39,7 +39,10 @@ feature 'ManageFoos', type: :feature, js: true do
     background do
       visit root_path
       expect(page).to have_css('h2', text: 'City List')
-      expect(page).to have_css('li', count: 0)
+
+      within(:xpath, LIST_XPATH) do
+        expect(page).to have_css('li', count: 0)
+      end
     end
 
     scenario 'has input form' do
@@ -65,8 +68,10 @@ feature 'ManageFoos', type: :feature, js: true do
       find(:xpath, "//button[@ng-click='citiesCtrl.create()']").click
 
       within(:xpath, LIST_XPATH) do
-        expect(page).to have_xpath('//li', count: 1)
-        expect(page).to have_content(city_state[:name])
+        using_wait_time 5 do
+          expect(page).to have_xpath('.//li', count: 1)
+          expect(page).to have_content(city_state[:name])
+        end
       end
     end
 
