@@ -30,4 +30,12 @@ module UiHelper
       click_button('Login')
     end
   end
+
+  def logout
+    find('#navbar-loginlabel').click
+    find_button('Logout').click
+
+    expect(page).to have_no_css('#login-form')
+    expect(page).to have_no_css('#logout-form')
+  end
 end

@@ -98,7 +98,27 @@ feature 'Authns', type: :feature, js: true do
   end
 
   feature 'logout' do
-    scenario 'closes form and removes user name'
+    before do
+      signup registration
+      login registration
+    end
+
+    scenario 'closes form and removes user name' do
+      login_criteria = ['#navbar-loginlabel', text: 'Login']
+      user_name_criteria = ['#navbar-loginlabel', text: /#{registration[:name]}/]
+      user_id_criteria = ['#user_id', visible: false]
+
+      expect(page).to have_no_css(*login_criteria)
+      expect(page).to have_css(*user_name_criteria)
+      expect(page).to have_css(*user_id_criteria)
+
+      logout
+
+      expect(page).to have_css(*login_criteria)
+      expect(page).to have_no_css(*user_name_criteria)
+      expect(page).to have_no_css(*user_id_criteria)
+    end
+
     scenario 'can no longer access authenticated resources'
   end
 end

@@ -12,6 +12,15 @@
         service.getCurrentUser = getCurrentUser;
         service.getCurrentUserName = getCurrentUserName;
         service.login = login;
+        service.logout = logout;
+
+        activate();
+
+        function activate () {
+            $auth.validateUser().then(function (user) {
+               service.user = user;
+            });
+        }
 
         function signup (registration) {
             return $auth.submitRegistration(registration);
@@ -37,6 +46,16 @@
 
             result.then(function (response) {
                 service.user = response;
+            });
+
+            return result;
+        }
+
+        function logout () {
+            var result = $auth.signOut().then(function (response) {
+                service.user = null;
+            }, function (response) {
+                service.user = null;
             });
 
             return result;
