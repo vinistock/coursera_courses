@@ -89,7 +89,13 @@ feature 'Authns', type: :feature, js: true do
         end
       end
 
-      scenario 'can access authenticated resources'
+      scenario 'can access authenticated resources' do
+        checkme
+        within 'div.checkme-user' do
+          expect(page).to have_css('label', text: /#{registration[:name]}/)
+          expect(page).to have_css('label', text: /#{registration[:email]}/)
+        end
+      end
     end
 
     context 'invalid login' do
@@ -135,6 +141,20 @@ feature 'Authns', type: :feature, js: true do
       expect(page).to have_no_css(*user_id_criteria)
     end
 
-    scenario 'can no longer access authenticated resources'
+    scenario 'can no longer access authenticated resources' do
+      logout
+      checkme
+      within 'div.checkme-user' do
+        expect(page).to have_no_css('label', text: /#{registration[:name]}/)
+        expect(page).to have_css('label', text: /Authorized users only/)
+      end
+    end
+  end
+
+  def checkme
+    visit root_path + '#/authn'
+    within 'div#authn-check' do
+      click_button('checkMe() says...')
+    end
   end
 end
