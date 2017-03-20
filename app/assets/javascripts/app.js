@@ -25,6 +25,10 @@
 //= require spa/layout/layout.module
 //= require spa/layout/navbar/navbar.component
 
+//= require spa/subjects/subjects.module
+//= require spa/subjects/images/images.component
+//= require spa/subjects/images/images.service
+
 //= require spa/foos/foos.module
 //= require spa/foos/foos.service
 //= require spa/foos/foos.controller
