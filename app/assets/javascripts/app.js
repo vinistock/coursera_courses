@@ -28,6 +28,7 @@
 //= require spa/subjects/subjects.module
 //= require spa/subjects/images/images.component
 //= require spa/subjects/images/images.service
+//= require spa/subjects/images/images_authz.directive
 
 //= require spa/foos/foos.module
 //= require spa/foos/foos.service
