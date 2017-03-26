@@ -40,9 +40,13 @@
         };
     }
 
-    ImageEditorController.$inject = ["$scope", "spa.subjects.Image", "$stateParams"];
-    function ImageEditorController ($scope, Image, $stateParams) {
+    ImageEditorController.$inject = ["$scope", "spa.subjects.Image", "$stateParams", "$state"];
+    function ImageEditorController ($scope, Image, $stateParams, $state) {
         var vm = this;
+        vm.create = create;
+        vm.update = update;
+        vm.clear = clear;
+        vm.remove = remove;
 
         vm.$onInit = function () {
             console.log("ImageEditorController", $scope);
@@ -57,6 +61,48 @@
         function newResource () {
             vm.item = new Image();
             return vm.item;
+        }
+
+        function update () {
+            $scope.imageform.$setPristine();
+            vm.item.errors = null;
+
+            vm.item.$update().then(function () {
+                $state.reload();
+            }, handleError);
+        }
+
+        function remove () {
+            vm.item.errors = null;
+
+            vm.item.$delete().then(function () {
+                clear();
+            }, handleError);
+        }
+
+        function clear () {
+            newResource();
+            $state.go(".", { id: null });
+        }
+
+        function create () {
+            $scope.imageform.$setPristine();
+            vm.item.errors = null;
+
+            vm.item.$save().then(function (){
+                $state.go(".", { id: vm.item.id });
+            }, handleError);
+        }
+
+        function handleError (response) {
+            if (response.data) {
+                vm.item["errors"] = response.data.errors;
+            }
+
+            if (!vm.item.errors) {
+                vm.item["errors"] = {};
+                vm.item["errors"]["full_messages"] = [response];
+            }
         }
     }
 })();
