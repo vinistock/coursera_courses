@@ -67,7 +67,7 @@
             var itemId = imageId ? imageId : vm.item.id;
             vm.item = Image.get({id: itemId});
             vm.things = ImageThing.query({ image_id: itemId });
-
+            vm.linkable_things = ImageLinkableThing.query({ image_id: itemId });
             $q.all([vm.item.$promise, vm.things.$promise]).catch(handleError);
         }
 
@@ -75,7 +75,23 @@
         function update () {
             vm.item.errors = null;
 
-            vm.item.$update().then(function () {
+            var update = vm.item.$update();
+            linkThings(update);
+        }
+
+        function linkThings (parentPromise) {
+            var resource;
+            var promises = [];
+
+            if (parentPromise) promises.push(parentPromise);
+
+            angular.forEach(vm.selected_linkables, function (linkable) {
+                resource = ImageThing.save({ image_id: vm.item.id }, { thing_id: linkable });
+                promises.push(resource.$promise);
+            });
+
+            vm.selected_linkables = [];
+            $q.all(promises).then(function (response){
                 $scope.imageform.$setPristine();
                 $state.reload();
             }, handleError);
