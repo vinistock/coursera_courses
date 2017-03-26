@@ -29,10 +29,13 @@
 //= require spa/subjects/images/images.component
 //= require spa/subjects/images/images.service
 //= require spa/subjects/images/images_authz.directive
+//= require spa/subjects/images/image_things.service
+//= require spa/subjects/images/image_linkable_things.service
 
 //= require spa/subjects/things/things.component
 //= require spa/subjects/things/things.service
 //= require spa/subjects/things/things_authz.directive
+//= require spa/subjects/things/thing_images.service
 
 //= require spa/foos/foos.module
 //= require spa/foos/foos.service
