@@ -58,6 +58,19 @@ class ApplicationPolicy
     Pundit.policy_scope!(user, record.class)
   end
 
+  def self.merge(scope)
+    prev=nil
+    scope.select { |r|
+      if prev && prev.id == r.id
+        prev.user_roles << r.role_name if r.role_name
+        false
+      else
+        r.user_roles << r.role_name if r.role_name
+        prev = r
+      end
+    }
+  end
+
   class Scope
     attr_reader :user, :scope
 
@@ -73,20 +86,6 @@ class ApplicationPolicy
     def user_criteria
       user_id = @user.id.to_i if @user
       user_id ? "=#{user_id}" : 'is null'
-    end
-
-    def self.merge(scope)
-      prev = nil
-
-      scope.select do |r|
-        if prev && prev.id == r.id
-          prev.user_roles << r.role_name if r.role_name
-          false
-        else
-          r.user_roles << r.role_name if r.role_name
-          prev = r
-        end
-      end
     end
   end
 end
