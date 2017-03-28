@@ -7,7 +7,7 @@ class ThingImagesController < ApplicationController
   before_action :get_image, only: %i(image_things)
   before_action :authenticate_user!, only: %i(create update destroy)
   after_action :verify_authorized
-  after_action :verify_policy_scoped, only: [:linkable_things]
+  # after_action :verify_policy_scoped, only: [:linkable_things]
 
   def index
     authorize @thing, :get_images?

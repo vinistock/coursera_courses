@@ -14,6 +14,9 @@
             controller: ImageEditorController,
             bindings: {
                 authz: "<"
+            },
+            require: {
+                imagesAuthz: "^sdImagesAuthz"
             }
         });
 
@@ -45,6 +48,7 @@
     ImageEditorController.$inject = ["$scope", "spa.subjects.Image", "$stateParams", "$state", "spa.subjects.ImageThing", "spa.subjects.ImageLinkableThing", "$q", "spa.authz.Authz"];
     function ImageEditorController ($scope, Image, $stateParams, $state, ImageThing, ImageLinkableThing, $q, Authz) {
         var vm = this;
+        vm.selected_linkables = [];
         vm.create = create;
         vm.update = update;
         vm.clear = clear;
@@ -65,6 +69,7 @@
 
         function newResource () {
             vm.item = new Image();
+            vm.imagesAuthz.newItem(vm.item);
             return vm.item;
         }
 
@@ -73,6 +78,9 @@
             vm.item = Image.get({id: itemId});
             vm.things = ImageThing.query({ image_id: itemId });
             vm.linkable_things = ImageLinkableThing.query({ image_id: itemId });
+
+            vm.imagesAuthz.newItem(vm.item);
+
             $q.all([vm.item.$promise, vm.things.$promise]).catch(handleError);
         }
 

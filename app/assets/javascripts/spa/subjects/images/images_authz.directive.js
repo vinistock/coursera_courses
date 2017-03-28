@@ -23,36 +23,49 @@
         }
     }
 
-    ImagesAuthzController.$inject = ["$scope", "spa.authn.Authn"];
-    function ImagesAuthzController ($scope, Authn) {
+    ImagesAuthzController.$inject = ["$scope", "spa.subjects.ImagesAuthz"];
+    function ImagesAuthzController ($scope, ImagesAuthz) {
         var vm = this;
         vm.authz = {};
-        vm.authz.authenticated = false;
-        vm.authz.canCreate = false;
-        vm.authz.canQuery = false;
-        vm.authz.canUpdate = false;
-        vm.authz.canDelete = false;
-        vm.authz.canGetDetails = false;
         vm.authz.canUpdateItem = canUpdateItem;
-
-        ImagesAuthzController.prototype.resetAccess = function () {
-            vm.authz.canCreate = false;
-            vm.authz.canQuery = true;
-            vm.authz.canUpdate = false;
-            vm.authz.canDelete = false;
-            vm.authz.canGetDetails = true;
-        };
+        vm.newItem = newItem;
 
         activate();
 
         function activate () {
-            vm.resetAccess();
-            $scope.$watch(Authn.getCurrentUser, newUser);
+            vm.newItem(null);
+        }
+
+        function newItem (item) {
+            ImagesAuthz.getAuthorizedUser().then(
+                function (user) { authzUserItem(item, user); },
+                function (user) { authzUserItem(item, user); })
+        }
+
+        function authzUserItem (item, user) {
+            vm.authz.authenticated = ImagesAuthz.isAuthenticated();
+            vm.authz.canQuery = ImagesAuthz.canQuery();
+            vm.authz.canCreate = ImagesAuthz.canCreate();
+
+            if (item && item.$promise) {
+                vm.authz.canUpdate = false;
+                vm.authz.canDelete = false;
+                vm.authz.canGetDetails = false;
+                item.$promise.then(function() { checkAccess(item) });
+            } else {
+                checkAccess(item);
+            }
+        }
+
+        function checkAccess (item) {
+            vm.authz.canUpdate = ImagesAuthz.canUpdate(item);
+            vm.authz.canDelete = ImagesAuthz.canDelete(item);
+            vm.authz.canGetDetails = ImagesAuthz.canGetDetails(item);
         }
 
         function newUser(user, prevUser) {
             vm.authz.canQuery = true;
-            vm.authz.authenticated = Authn.isAuthenticated();
+            vm.authz.authenticated = ImagesAuthz.isAuthenticated();
 
             if (vm.authz.authenticated) {
                 vm.authz.canCreate = true;
@@ -65,7 +78,7 @@
         }
 
         function canUpdateItem (item) {
-            return Authn.isAuthenticated();
+            return ImagesAuthz.isAuthenticated();
         }
     }
 })();

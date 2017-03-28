@@ -39,6 +39,10 @@
 
 //= require spa/authz/authz.module
 //= require spa/authz/authz.service
+//= require spa/authz/base_policy.service
+
+//= require spa/subjects/images/images_authz.service
+//= require spa/subjects/things/things_authz.service
 
 //= require spa/foos/foos.module
 //= require spa/foos/foos.service
