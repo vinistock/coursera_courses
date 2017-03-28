@@ -8,6 +8,9 @@
             controller: ThingEditorController,
             bindings: {
                 authz: "<"
+            },
+            require: {
+                thingsAuthz: "^sdThingsAuthz"
             }
         })
         .component("sdThingSelector", {
@@ -59,6 +62,7 @@
         //////////////
         function newResource() {
             vm.item = new Thing();
+            vm.thingsAuthz.newItem(vm.item);
             return vm.item;
         }
 
@@ -66,6 +70,7 @@
             var itemId = thingId ? thingId : vm.item.id;
             vm.images = ThingImage.query({ thing_id: itemId });
             vm.item = Thing.get({ id: itemId });
+            vm.thingsAuthz.newItem(vm.item);
             vm.images.$promise.then(function () {
                angular.forEach(vm.images, function (ti) {
                    ti.originalPriority = ti.priority;
