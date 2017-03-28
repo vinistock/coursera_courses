@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a09be0ce-84de-4a1c-ad8e-68878cc0d92d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/things_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.byebug_history" afterPath="$PROJECT_DIR$/.byebug_history" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/things_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/things_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/thing.rb" afterPath="$PROJECT_DIR$/app/models/thing.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/policies/application_policy.rb" afterPath="$PROJECT_DIR$/app/policies/application_policy.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/things/_thing.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/things/_thing.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/factories/things.rb" afterPath="$PROJECT_DIR$/spec/factories/things.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/thing_images_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/thing_images_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/policies/image_policy.rb" afterPath="$PROJECT_DIR$/app/policies/image_policy.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/policies/thing_policy.rb" afterPath="$PROJECT_DIR$/app/policies/thing_policy.rb" />
     </list>
     <ignored path="api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="images_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/images_controller.rb">
+      <file leaf-file-name="thing_policy.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/policies/thing_policy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            <state relative-caret-position="252">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -55,38 +50,18 @@
       <file leaf-file-name="things_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/things_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="32" column="56" lean-forward="true" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+            <state relative-caret-position="18">
+              <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="2" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image_policy.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/policies/image_policy.rb">
+      <file leaf-file-name="thing_images_controller.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/thing_images_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thing_policy.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/policies/thing_policy.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="things_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/requests/things_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+            <state relative-caret-position="378">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,6 +72,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
               <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image_policy.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/policies/image_policy.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -164,7 +149,6 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/spa/subjects/images/image_linkable_things.service.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/spa/subjects/things/thing_images.service.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/app.js" />
-        <option value="$PROJECT_DIR$/app/controllers/thing_images_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/spa/subjects/images/image_editor.html" />
         <option value="$PROJECT_DIR$/config/environments/test.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/spa/subjects/images/images.component.js" />
@@ -183,7 +167,6 @@
         <option value="$PROJECT_DIR$/app/views/images/_image.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/models/concerns/protectable.rb" />
         <option value="$PROJECT_DIR$/app/models/image.rb" />
-        <option value="$PROJECT_DIR$/app/policies/image_policy.rb" />
         <option value="$PROJECT_DIR$/app/controllers/images_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/things/_thing.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/helpers/things_helper.rb" />
@@ -192,8 +175,10 @@
         <option value="$PROJECT_DIR$/spec/factories/things.rb" />
         <option value="$PROJECT_DIR$/spec/requests/things_spec.rb" />
         <option value="$PROJECT_DIR$/spec/support/api_helper.rb" />
-        <option value="$PROJECT_DIR$/app/policies/thing_policy.rb" />
         <option value="$PROJECT_DIR$/app/controllers/things_controller.rb" />
+        <option value="$PROJECT_DIR$/app/policies/image_policy.rb" />
+        <option value="$PROJECT_DIR$/app/policies/thing_policy.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/thing_images_controller.rb" />
       </list>
     </option>
   </component>
@@ -544,7 +529,7 @@
       <workItem from="1490560177505" duration="11870000" />
       <workItem from="1490581875670" duration="43000" />
       <workItem from="1490628105583" duration="1107000" />
-      <workItem from="1490655834669" duration="3150000" />
+      <workItem from="1490655834669" duration="4398000" />
     </task>
     <servers />
   </component>
@@ -566,7 +551,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107169000" />
+    <option name="totallyTimeSpent" value="108417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -734,13 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/thing_images_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -936,14 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/policies/image_policy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/factories/things.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -968,18 +938,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/things_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/policies/image_policy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="32" column="56" lean-forward="true" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+        <state relative-caret-position="396">
+          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/policies/thing_policy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        <state relative-caret-position="252">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/things_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/thing_images_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>

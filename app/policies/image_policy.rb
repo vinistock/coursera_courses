@@ -19,6 +19,10 @@ class ImagePolicy < ApplicationPolicy
     organizer_or_admin?
   end
 
+  def get_things?
+    true
+  end
+
   class Scope < Scope
     def user_roles
       scope.select('Images.*, r.role_name').joins("left join Roles r on r.mname='Image' and r.mid=Images.id and r.user_id #{user_criteria}")
