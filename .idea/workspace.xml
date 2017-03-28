@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a09be0ce-84de-4a1c-ad8e-68878cc0d92d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/spa/subjects/things/things.component.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/spa/subjects/things/things.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/spa/subjects/things/things_authz.directive.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/spa/subjects/things/things_authz.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/spa/layout.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/spa/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/spa/subjects.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/spa/subjects.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/ptourist.rake" afterPath="$PROJECT_DIR$/lib/tasks/ptourist.rake" />
     </list>
     <ignored path="api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,21 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="layout.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/spa/layout.css">
+      <file leaf-file-name="ptourist.rake" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/tasks/ptourist.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subjects.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/spa/subjects.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="363">
+              <caret line="68" column="47" lean-forward="true" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -62,9 +49,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>def role_n</find>
-      <find>def role_nam</find>
-      <find>def role_name</find>
       <find>def serole_name</find>
       <find>def selrole_name</find>
       <find>def self.role_name</find>
@@ -92,6 +76,9 @@
       <find>canRemoveI</find>
       <find>canRemoveIma</find>
       <find>canRemoveImage</find>
+      <find>get</find>
+      <find>user</find>
+      <find>first_names</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/assets/javascripts</dir>
@@ -119,7 +106,6 @@
         <option value="$PROJECT_DIR$/spec/factories/user.rb" />
         <option value="$PROJECT_DIR$/spec/models/role_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/lib/tasks/ptourist.rake" />
         <option value="$PROJECT_DIR$/app/views/images/_image.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/models/concerns/protectable.rb" />
         <option value="$PROJECT_DIR$/app/models/image.rb" />
@@ -155,6 +141,7 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/spa/subjects/things/things.component.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/spa/layout.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/spa/subjects.css" />
+        <option value="$PROJECT_DIR$/lib/tasks/ptourist.rake" />
       </list>
     </option>
   </component>
@@ -667,7 +654,7 @@
       <workItem from="1490628105583" duration="1107000" />
       <workItem from="1490655834669" duration="7926000" />
       <workItem from="1490713948315" duration="2638000" />
-      <workItem from="1490738462637" duration="2018000" />
+      <workItem from="1490738462637" duration="3442000" />
     </task>
     <servers />
   </component>
@@ -689,7 +676,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116601000" />
+    <option name="totallyTimeSpent" value="118025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -976,13 +963,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/ptourist.rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/spa/subjects/images/image_editor.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -1106,6 +1086,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tasks/ptourist.rake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="68" column="47" lean-forward="true" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
           <folding />
         </state>
       </provider>
