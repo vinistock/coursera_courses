@@ -23,7 +23,9 @@ class ThingImagesController < ApplicationController
   def linkable_things
     authorize Thing, :get_linkables?
     image = Image.find(params[:image_id])
-    @things = policy_scope(Thing.not_linked(image))
+    # @things = policy_scope(Thing.not_linked(image))
+    @things = Thing.not_linked(image)
+    @things = ThingPolicy::Scope.new(current_user, @things).user_roles(true, false)
     @things = ThingPolicy.merge(@things)
     render 'things/index'
   end

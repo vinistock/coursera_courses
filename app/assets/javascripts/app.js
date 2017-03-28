@@ -37,6 +37,9 @@
 //= require spa/subjects/things/things_authz.directive
 //= require spa/subjects/things/thing_images.service
 
+//= require spa/authz/authz.module
+//= require spa/authz/authz.service
+
 //= require spa/foos/foos.module
 //= require spa/foos/foos.service
 //= require spa/foos/foos.controller

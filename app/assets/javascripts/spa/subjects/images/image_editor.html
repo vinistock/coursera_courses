@@ -44,6 +44,11 @@
                     Update Image
                 </button>
 
+                <button name="image-update" type="submit" ng-show="!$ctrl.authz.canUpdate" ng-disabled="$ctrl.selected_linkables.length == 0"
+                        ng-click="$ctrl.linkThings()">
+                    Link to Things
+                </button>
+
                 <button name="image-delete" type="submit" ng-show="$ctrl.authz.canDelete" ng-click="$ctrl.remove()">
                     Delete Image
                 </button>

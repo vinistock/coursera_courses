@@ -27,21 +27,23 @@
         return APP_CONFIG.image_editor_html;
     }
 
-    ImageSelectorController.$inject = ["$scope", "spa.subjects.Image", "$stateParams"];
-    function ImageSelectorController ($scope, Image, $stateParams) {
+    ImageSelectorController.$inject = ["$scope", "spa.subjects.Image", "$stateParams", "spa.authz.Authz"];
+    function ImageSelectorController ($scope, Image, $stateParams, Authz) {
         var vm = this;
 
         vm.$onInit = function () {
             console.log("ImageSelectorController", $scope);
 
-            if(!$stateParams.id) {
-                vm.items = Image.query();
-            }
+            $scope.$watch(function () { return Authz.getAuthorizedUserId(); }, function () {
+                if(!$stateParams.id) {
+                    vm.items = Image.query();
+                }
+            });
         };
     }
 
-    ImageEditorController.$inject = ["$scope", "spa.subjects.Image", "$stateParams", "$state", "spa.subjects.ImageThing", "spa.subjects.ImageLinkableThing", "$q"];
-    function ImageEditorController ($scope, Image, $stateParams, $state, ImageThing, ImageLinkableThing, $q) {
+    ImageEditorController.$inject = ["$scope", "spa.subjects.Image", "$stateParams", "$state", "spa.subjects.ImageThing", "spa.subjects.ImageLinkableThing", "$q", "spa.authz.Authz"];
+    function ImageEditorController ($scope, Image, $stateParams, $state, ImageThing, ImageLinkableThing, $q, Authz) {
         var vm = this;
         vm.create = create;
         vm.update = update;
@@ -50,12 +52,15 @@
 
         vm.$onInit = function () {
             console.log("ImageEditorController", $scope);
-
-            if($stateParams.id) {
-                reload($stateParams.id);
-            } else {
-                newResource();
-            }
+            $scope.$watch(
+                function () { return Authz.getAuthorizedUserId(); },
+                function() {
+                    if($stateParams.id) {
+                        reload($stateParams.id);
+                    } else {
+                        newResource();
+                    }
+                });
         };
 
         function newResource () {

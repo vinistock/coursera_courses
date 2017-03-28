@@ -33,8 +33,9 @@
         "$stateParams",
         "spa.subjects.Thing",
         "spa.subjects.ThingImage",
-        "$q"];
-    function ThingEditorController($scope, $state, $stateParams, Thing, ThingImage, $q) {
+        "$q",
+        "spa.authz.Authz"];
+    function ThingEditorController($scope, $state, $stateParams, Thing, ThingImage, $q, Authz) {
         var vm=this;
         vm.create = create;
         vm.clear  = clear;
@@ -44,12 +45,15 @@
 
         vm.$onInit = function() {
             console.log("ThingEditorController",$scope);
-            if ($stateParams.id) {
-                // reload($stateParams.id);
-                $scope.$watch(function () { return vm.authz.authenticated; }, function () { reload($stateParams.id); });
-            } else {
-                newResource();
-            }
+
+            $scope.$watch(function () { return Authz.getAuthorizedUserId(); }, function () {
+                if ($stateParams.id) {
+                    // reload($stateParams.id);
+                    $scope.$watch(function () { return vm.authz.authenticated; }, function () { reload($stateParams.id); });
+                } else {
+                    newResource();
+                }
+            });
         };
 
         //////////////
@@ -144,15 +148,19 @@
 
     ThingSelectorController.$inject = ["$scope",
         "$stateParams",
-        "spa.subjects.Thing"];
-    function ThingSelectorController($scope, $stateParams, Thing) {
+        "spa.subjects.Thing",
+        "spa.authz.Authz"];
+    function ThingSelectorController($scope, $stateParams, Thing, Authz) {
         var vm=this;
 
         vm.$onInit = function() {
             console.log("ThingSelectorController",$scope);
-            if (!$stateParams.id) {
-                vm.items = Thing.query();
-            }
+
+            $scope.$watch(function () { return Authz.getAuthorizedUserId(); }, function () {
+                if (!$stateParams.id) {
+                    vm.items = Thing.query();
+                }
+            });
         };
     }
 })();
