@@ -103,6 +103,7 @@ namespace :ptourist do
 
     originator_users.each do |user|
       user.add_role(Role::ORIGINATOR, Thing).save
+      user.add_role(Role::ORIGINATOR, Trip).save
     end
 
     puts "users: #{User.pluck(:name)}"

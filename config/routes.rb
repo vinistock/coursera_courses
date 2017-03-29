@@ -18,6 +18,8 @@ Rails.application.routes.draw do
     resources :things, except: [:new, :edit] do
       resources :thing_images, only: [:index, :create, :update, :destroy]
     end
+
+    resources :trips, except: [:new, :edit]
   end
 
   root 'ui#index'

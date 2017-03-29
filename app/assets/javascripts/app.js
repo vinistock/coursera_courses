@@ -44,6 +44,11 @@
 //= require spa/subjects/images/images_authz.service
 //= require spa/subjects/things/things_authz.service
 
+//= require spa/subjects/trips/trips_authz.directive
+//= require spa/subjects/trips/trips_authz.service
+//= require spa/subjects/trips/trips.service
+//= require spa/subjects/trips/trips.component
+
 //= require spa/foos/foos.module
 //= require spa/foos/foos.service
 //= require spa/foos/foos.controller

@@ -26,6 +26,10 @@
             .state("things",{
                 url: "/things/:id",
                 templateUrl: APP_CONFIG.things_page_html
+            })
+            .state("trips",{
+                url: "/trips/:id",
+                templateUrl: APP_CONFIG.trips_page_html
             });
 
         // $urlRouterProvider.otherwise("/");
