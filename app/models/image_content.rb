@@ -1,6 +1,10 @@
 class ImageContent
   CONTENT_TYPES = %w(image/jpeg image/jpg)
   MAX_CONTENT_SIZE = 10*1000*1024
+  THUMBNAIL = '100x67'
+  SMALL = '320x213'
+  MEDIUM = '800x533'
+  LARGE = '1200x800'
 
   include Mongoid::Document
   field :image_id, type: Integer
@@ -9,6 +13,8 @@ class ImageContent
   field :content_type, type: String
   field :content, type: BSON::Binary
   field :original, type: Mongoid::Boolean
+
+  index({image_id: 1, width: 1, height: 1}, {name: 'fdx_image_size'})
 
   validates_presence_of :image_id, :height, :width, :content_type, :content
   validate :validate_width_height
@@ -27,6 +33,18 @@ class ImageContent
       errors.add(:content, "#{content.data.size} too large, greater than max #{MAX_CONTENT_SIZE}")
     end
   end
+
+  scope :image, ->(image) { where(image_id: image.id) if image }
+  scope :smallest, ->(min_width=nil, min_height=nil) {
+    if min_width || min_height
+      query = where({})
+      query = query.where(:width => { :$gte => min_width }) if min_width
+      query = query.where(:height => { :$gte => min_height }) if min_height
+      query.order(:width.asc, :height.asc).limit(1)
+    else
+      order(:width.desc, :height.desc).limit(1)
+    end
+  }
 
   def content=(value)
     if self[:content]
