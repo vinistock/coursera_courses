@@ -46,6 +46,10 @@ class ImageContent
     end
   }
 
+  def suffix
+    'jpg' if CONTENT_TYPES.include?(content_type)
+  end
+
   def content=(value)
     if self[:content]
       self.width = nil

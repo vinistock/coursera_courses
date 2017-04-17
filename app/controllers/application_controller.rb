@@ -5,6 +5,7 @@ class ApplicationController < ActionController::API
 
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
   rescue_from Mongoid::Errors::DocumentNotFound, with: :record_not_found
+  rescue_from Mongoid::Errors::Validations, with: :mongoid_validation_error
   rescue_from ActionController::ParameterMissing, with: :missing_parameter
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
@@ -37,5 +38,11 @@ class ApplicationController < ActionController::API
     payload = { full_messages: ["#{user} not authorized to #{exception.query}"] }
     render json: payload, status: :forbidden
     Rails.logger.debug exception
+  end
+
+  def mongoid_validation_error(exception)
+    payload = { errors: exception.record.errors.messages }
+    render json: payload, status: :unprocessable_entity
+    Rails.logger.debug exception.message
   end
 end
