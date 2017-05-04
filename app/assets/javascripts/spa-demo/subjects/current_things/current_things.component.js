@@ -5,13 +5,22 @@
     .module("spa-demo.subjects")
     .component("sdCurrentThings", {
       templateUrl: thingsTemplateUrl,
-      controller: CurrentThingsController,
+      controller: CurrentThingsController
     })
     .component("sdCurrentThingInfo", {
       templateUrl: thingInfoTemplateUrl,
-      controller: CurrentThingInfoController,
+      controller: CurrentThingInfoController
     })
+      .component("sdCurrentTypes", {
+          templateUrl: typesTemplateUrl,
+          controller: CurrentTypesController
+      })
     ;
+
+    typesTemplateUrl.$inject = ["spa-demo.config.APP_CONFIG"];
+  function typesTemplateUrl (APP_CONFIG) {
+      return APP_CONFIG.current_types_html;
+  }
 
   thingsTemplateUrl.$inject = ["spa-demo.config.APP_CONFIG"];
   function thingsTemplateUrl(APP_CONFIG) {
@@ -20,7 +29,22 @@
   thingInfoTemplateUrl.$inject = ["spa-demo.config.APP_CONFIG"];
   function thingInfoTemplateUrl(APP_CONFIG) {
     return APP_CONFIG.current_thing_info_html;
-  }    
+  }
+
+    CurrentTypesController.$inject = ["$scope", "spa-demo.subjects.currentSubjects"];
+    function CurrentTypesController ($scope, currentSubjects) {
+        var vm = this;
+        vm.currentType = '';
+        vm.onChange = onChange;
+
+        currentSubjects.getThingTypes().$promise.then(function (response) {
+            vm.thingTypes = response.types;
+        });
+
+        function onChange () {
+            $scope.currentType = vm.currentType;
+        }
+    }
 
   CurrentThingsController.$inject = ["$scope",
                                      "spa-demo.subjects.currentSubjects"];
@@ -36,6 +60,13 @@
       $scope.$watch(
         function() { return currentSubjects.getThings(); }, 
         function(things) { vm.things = things; }
+      );
+
+      $scope.$watch(
+        function () { return $("#type-select").val(); },
+        function (type) {
+          if (type !== '? string: ?') currentSubjects.refresh(type);
+        }
       );
     }    
     return;

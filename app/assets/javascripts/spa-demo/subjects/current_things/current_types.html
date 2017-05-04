@@ -1,0 +1,7 @@
+<div class="types">
+    <label>Types of things</label>
+
+    <select id="type-select" class="form-control" ng-model="$ctrl.currentType" ng-change="$ctrl.onChange()">
+        <option ng-repeat="type in $ctrl.thingTypes" value="{{ type }}">{{ type }}</option>
+    </select>
+</div>

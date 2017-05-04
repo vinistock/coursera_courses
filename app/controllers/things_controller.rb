@@ -4,12 +4,15 @@ class ThingsController < ApplicationController
   before_action :set_thing, only: [:show, :update, :destroy]
   before_action :authenticate_user!, only: [:create, :update, :destroy]
   wrap_parameters :thing, include: ["name", "description", "notes"]
-  after_action :verify_authorized
+  after_action :verify_authorized, except: :thing_types
   after_action :verify_policy_scoped, only: [:index]
 
   def index
     authorize Thing
-    things = policy_scope(Thing.all)
+
+    query = params[:type] ? Thing.where(thing_type: params[:type]) : Thing.all
+
+    things = policy_scope(query)
     @things = ThingPolicy.merge(things)
   end
 
@@ -52,6 +55,11 @@ class ThingsController < ApplicationController
     @thing.destroy
 
     head :no_content
+  end
+
+  def thing_types
+    types = Thing.pluck(:thing_type).uniq
+    render json: { types: types }, status: :ok
   end
 
   private

@@ -23,6 +23,7 @@
     service.refresh = refresh;
     service.isCurrentImageIndex = isCurrentImageIndex;
     service.isCurrentThingIndex = isCurrentThingIndex;
+    service.getThingTypes = getThingTypes;
     service.nextThing = nextThing;
     service.previousThing = previousThing;
 
@@ -30,13 +31,19 @@
     $rootScope.$watch(function(){ return currentOrigin.getVersion(); }, refresh);
     return;
     ////////////////
-    function refresh() {      
+      function getThingTypes () {
+          return $resource(APP_CONFIG.server_url + "/api/thing_types", {}, { query: { isArray: false } }).query();
+      }
+
+    function refresh(type) {
       var params=currentOrigin.getPosition();
       if (!params || !params.lng || !params.lat) {
         params=angular.copy(APP_CONFIG.default_position);
       } else {
         params["distance"]=true;
       }
+
+      if (type) params["thing_type"] = type;
 
       if (currentOrigin.getDistance() > 0) {
         params["miles"]=currentOrigin.getDistance();

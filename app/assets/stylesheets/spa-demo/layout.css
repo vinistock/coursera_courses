@@ -55,6 +55,10 @@ span.search-criteria form input[name='distance-limit'] {
   padding-right: 0;
 }
 
+#map {
+    min-height: 100vh;
+}
+
 /*********** areas ********/
 div.areas-left, div.areas-right {
   padding-left: 0;
