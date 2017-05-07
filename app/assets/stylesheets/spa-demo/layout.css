@@ -60,6 +60,27 @@ span.search-criteria form input[name='distance-limit'] {
 }
 
 /*********** areas ********/
+.thing-types-area li {
+    border: 1px solid slategray;
+    margin-top: 5px;
+    padding-left: 0;
+    background-color: papayawhip;
+}
+
+.thing-types-area li:hover {
+    border: 2px solid slategray;
+}
+
+.thing-types-area .thing_id,
+.thing-types-area .image_id {
+    display: none;
+}
+
+.thing-types-area ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 div.areas-left, div.areas-right {
   padding-left: 0;
   padding-right: 0;

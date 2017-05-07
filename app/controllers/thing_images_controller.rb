@@ -48,13 +48,13 @@ class ThingImagesController < ApplicationController
         .with_name
         .with_caption
         .with_position
-      @thing_images=@thing_images.things    if subject && subject.downcase=="thing"
-      @thing_images=ThingImage.with_distance(@origin, @thing_images) if distance.downcase=="true"
 
       if params[:thing_type]
         ids = Thing.where(thing_type: params[:thing_type]).map(&:thing_images).map(&:ids)
         @thing_images = @thing_images.where(id: ids)
       end
+      @thing_images=@thing_images.things    if subject && subject.downcase=="thing"
+      @thing_images=ThingImage.with_distance(@origin, @thing_images) if distance.downcase=="true"
 
       render "thing_images/index"
     end
